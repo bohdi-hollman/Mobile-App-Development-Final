@@ -1,6 +1,6 @@
-Mobile App Development Final Project - Vocabulary App
-####################
-This Android application was designed to meet the following requirements:
+###Mobile App Development Final Project - Vocabulary App###
+
+#This Android application was designed to meet the following requirements:#
 
 This final project must incorporate the following concepts we have learned throughout the course: 
 
