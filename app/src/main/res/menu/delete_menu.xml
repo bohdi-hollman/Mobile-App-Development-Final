@@ -7,7 +7,8 @@
         android:title="Delete"
         android:orderInCategory="2"
         android:icon="@drawable/ic_delete"
-        android:iconTint="@color/black"
+        android:iconTint="#CCA43B"
+        android:tint="#CCA43B"
         app:showAsAction="ifRoom"/>
 
 </menu>

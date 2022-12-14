@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.sum.room.fragments.list.ListFragment"
-        android:label="List"
+        android:label="Your Vocabulary List:"
+        app:titleTextColor="#CCA43B"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_addFragment"
@@ -20,7 +21,7 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.sum.room.fragments.add.AddFragment"
-        android:label="Add"
+        android:label="Add a New Word!"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
@@ -29,7 +30,7 @@
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.sum.room.fragments.update.UpdateFragment"
-        android:label="Update"
+        android:label="Update This Word!"
         tools:layout="@layout/fragment_update" >
         <action
             android:id="@+id/action_updateFragment_to_listFragment"

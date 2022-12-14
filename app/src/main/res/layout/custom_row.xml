@@ -11,7 +11,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/satir_card"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
         app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,41 +20,58 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
 
             <TextView
                 android:id="@+id/textViewNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1"
-                android:textSize="36sp"
+                android:textSize="40sp"
                 android:textStyle="bold"
+                android:textColor="#CCA43B"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/textCustomWord"/>
 
             <TextView
                 android:id="@+id/textCustomWord"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="52dp"
                 android:text="Elohim"
                 android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#343434"
+                android:layout_weight="1"
+                android:width="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/textCustomDefinition"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textViewNumber"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.506" />
+                app:layout_constraintVertical_bias="1.5" />
 
             <TextView
                 android:id="@+id/textCustomDefinition"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:text="Özugur"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="52dp"
+                android:text="God(s)"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:width="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomWord"
                 app:layout_constraintStart_toEndOf="@+id/textCustomName"
+                app:layout_constraintLeft_toLeftOf="@+id/textCustomName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.506" />
+                app:layout_constraintVertical_bias="1.5" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
